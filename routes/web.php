@@ -29,9 +29,7 @@ Route::get('/about',[AboutController::class,'aboutPage']);
 Route::get('contact',[ContactController::class,'contactPage']);
 
 
-Route::get('products',function(){
-    return view('product');
-});
+Route::get('products',[ProductController::class,'productList']);
 
 Route::get('shops',function(){
     return view('shops.shop');

@@ -7,6 +7,16 @@
     <title>Product</title>
 </head>
 <body>
-    <h1>this is product page</h1>
+
+
+   <ul>
+   @foreach ($products as $key=>$product)
+   @if ($key==1)
+   <li>{{$key}} - {{$product}} </li>
+   @endif
+
+   @endforeach
+
+   </ul>
 </body>
 </html>
