@@ -7,16 +7,9 @@
     <title>Product</title>
 </head>
 <body>
+ <h2>Hello {{$name}}</h2>
 
 
-   <ul>
-   @foreach ($products as $key=>$product)
-   @if ($key==1)
-   <li>{{$key}} - {{$product}} </li>
-   @endif
-
-   @endforeach
-
-   </ul>
+ <h3>Your age is {{$age}}</h3>
 </body>
 </html>

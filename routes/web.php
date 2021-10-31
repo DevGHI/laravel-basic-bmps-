@@ -37,3 +37,4 @@ Route::get('shops',function(){
 
 Route::get('products/{product_id}/shop/{shop_id}',[ProductController::class,'productPage']);
 
+Route::post('api/promotions',[Controller::class,'showPromotions']);
