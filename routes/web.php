@@ -19,18 +19,21 @@ Route::get('/', function () {
 
 
 Route::get('/about',function(){
-    return "this is about page";
+    return view('about');
 });
 
-Route::redirect('/about', '/contact');
 
 Route::get('contact',function (){
-    return "this is contact page";
+    return view('contact');
 });
 
 
 Route::get('products',function(){
-    return "this is product page";
+    return view('product');
+});
+
+Route::get('shops',function(){
+    return view('shops.shop');
 });
 
 Route::get('products/{product_id}/shop/{shop_id}',function($product_id,$shop_id){
