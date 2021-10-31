@@ -22,7 +22,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('/about',[AboutController::class,'aboutPage']);
+Route::get('/about',[AboutController::class,'aboutPage'])->middleware('testMW');
 // Route::get('about','AboutContrller@aboutPage');
 
 
