@@ -12,14 +12,7 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    function showPromotions(Request $request){
-       $name=$request->name;
-       $age=$request->age;
-
-
-       return view('product',[
-           'name'=>$name,
-           'age'=>$age
-       ]);
-    }
+   function homePage(){
+       return view('website.index');
+   }
 }

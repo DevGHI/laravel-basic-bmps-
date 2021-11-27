@@ -17,12 +17,7 @@ use App\Http\Controllers\WebFrontend\ProductController;
 |
 */
 
-Route::get('/', function () {
-    $products=[19,2,3,5,6,7,8];
-    return view('welcome')->with([
-        'data'=>$products
-    ]);
-});
+Route::get('/', [Controller::class,'homePage']);;
 
 
 Route::get('/about',[AboutController::class,'aboutPage'])->name('website.about');
